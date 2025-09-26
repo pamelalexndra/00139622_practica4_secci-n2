@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio Final - Guía 4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🗓️ Agenda Personal</h1>
+    <p>Consulta tu actividad según el día de la semana</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <label for="diaSelect">Día de la semana:</label>
+      <select id="diaSelect">
+        <option value="">-- Selecciona un día --</option>
+        <option value="lunes">Lunes</option>
+        <option value="martes">Martes</option>
+        <option value="miércoles">Miércoles</option>
+        <option value="jueves">Jueves</option>
+        <option value="viernes">Viernes</option>
+        <option value="sábado">Sábado</option>
+      </select>
+
+      <label for="mensajeInput">Mensaje personalizado:</label>
+      <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje...">
+
+      <button onclick="mostrarRecordatorio()">Ver actividad</button>
+    </section>
+
+    <section id="resultado" class="resultado-section"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
